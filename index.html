@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h2>Consulta el clima de tu ciudad</h2>
+
+        <div class="busqueda">
+            <input type="text" id="ciudad" placeholder="Escribe tu ciudad">
+            <button id="buscar">Buscar</button>
+        </div>
+
+        <button id="actualizar">Actualizar clima</button>
+
+        <p id="cargando"></p>
+        <p id="error"></p>
+
+        <div id="clima">
+
+            <h2 id="ubicacion"></h2>
+
+            <div class="datos">
+                <div class="tarjeta">
+                    <h3>Temperatura</h3>
+                    <p id="temperatura"></p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Condición</h3>
+                    <p id="condicion"></p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Viento</h3>
+                    <p id="viento"></p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Probabilidad de lluvia</h3>
+                    <p id="lluvia"></p>
+                </div>
+            </div>
+
+            <h2>Clima de las últimas 24 horas</h2>
+            <div id="horasPasadas" class="horarios"></div>
+
+            <h2>Clima de las próximas 24 horas</h2>
+            <div id="horasFuturas" class="horarios"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #222;
+}
+
+.busqueda {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+button {
+    background-color: #176bb1;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #0d4f87;
+}
+
+#actualizar {
+    margin-bottom: 15px;
+}
+
+#error {
+    color: red;
+}
+
+#cargando {
+    color: #176bb1;
+}
+
+#clima {
+    display: none;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.tarjeta p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.horarios {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.hora {
+    min-width: 150px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+@media (max-width: 650px) {
+    .datos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .busqueda {
+        flex-direction: column;
+    }
+}
